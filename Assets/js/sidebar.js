@@ -1,3 +1,4 @@
+
 let key = this.location.pathname.substr(17,3);
 let tambah;
 let kurang;
