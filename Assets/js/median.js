@@ -18,7 +18,6 @@ let g1=0;
 let h1=0;
 let i1=0;
 let consoContainer = document.querySelector("#conso");
-
 function urut1(){
 	x1=parseInt(document.getElementById("input_median1").value);
 	if (x1==90){

@@ -52,16 +52,7 @@ document.querySelector(".sidebar").innerHTML = `
 				</li>
 				<li><a href="../Latihan" class="${getChapClass("l")}" id="latihan" style="border-bottom:3px solid rgb(0,156,255);"><i class="fas fa-edit" style="font-size:21px;color:white;margin-right:10px;margin-top: -14px;"></i>Latihan</a>
 				</li>
-				<li class="disabled" id="unduh"><a target="_blank" rel="noopener noreferrer" href="https://shorturl.at/hjJLM"><i class="fas fa-download" style="font-size:22px;color:white;margin-right:10px;margin-top: -14px;"></i>Unduh Materi</a>
+				<li class=" " id="unduh"><a target="_blank" rel="noopener noreferrer" href="https://shorturl.at/hjJLM"><i class="fas fa-download" style="font-size:22px;color:white;margin-right:10px;margin-top: -14px;"></i>Unduh Materi</a>
 				</li>
 			</ul>
-`;
-
-document.querySelector(".progressbar").innerHTML = `
-	<div class="progteks">Progress : </div>
-	<div class="kemajuan">
-		<div id="kemajuan-bar" class="progAtas" style="width:0%">
-			0%
-		</div>
-	</div>
 `;
