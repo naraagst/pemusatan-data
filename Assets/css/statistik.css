@@ -13,6 +13,8 @@ body {
   width:100%;
   overflow-y: auto;
   position: fixed;
+  font-family: Muli;
+  font-size: 16px;
 }
 
 @font-face {    
@@ -230,9 +232,9 @@ a{
 
 .materi{
 	width:44%;
-	height: 94%;
+	height: 98%;
 	background-color: white;
-	margin-right: 10px;
+	margin: 10px;
 	margin-left: 21px;
 	float:left;
 }
@@ -355,9 +357,9 @@ a{
 }
 .conso{
 	width:48%;
-	height:86% !important;
+	height:90% !important;
 	background-color: white;
-	margin: 0px 10px 0px 0px;
+	margin: 10px 10px 10px 0px;
 	padding:20px;
 	float:left;
 	overflow-y: auto;
@@ -365,7 +367,7 @@ a{
 }
 .subkonten{
 	width:100%;
-	height:90%;
+	height:89%;
 }
 .halaman, .halaman2, .halaman3{
 	height:10%;
@@ -648,7 +650,6 @@ a{
 .analisisC h3{
 	color: white;
 }
-
 @media only screen and (max-width: 1212px) and (min-width: 500px) {
 	body{
 		height: 100% !important;
@@ -713,7 +714,6 @@ a{
 	}
 	.header{
 		height: 40px;
-		position: sticky;
 	}
 	.sidebar{
 		position: absolute;
@@ -844,7 +844,7 @@ a{
 		display: inline-block;
 	}
 	#rumusmean td, #rumusmean table{
-	font-size:13px !important;
+	font-size:3vw !important;
 	}
 	.rataratamean{
 		width: auto !important;
