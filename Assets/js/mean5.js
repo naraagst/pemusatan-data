@@ -1,43 +1,40 @@
-$(document).ready(function(){
-	let i=0;
-	let jlhsoal=0;
-	function tampil(){
-		let url = "../../json/consomedian.json";
-		$.getJSON(url, function(data){
-			console.log(i);
-			jlhsoal = data.consomedian.length;
-			$("#soalmodus").html(data.consomedian[i].soal);
-			$("#datamodus").html(data.consomedian[i].data);
-			$("#soalmodus2").html(data.consomedian[i].soal2);
-			$("#pembahasanmean").html(data.consomedian[i].pembahasan);
-			$("#noconso").html(i+1);
-			$("#jlhsoal").html(jlhsoal);
-		})
+let consoMean5 = document.querySelectorAll(".consoMean5");
+let nextButton = document.querySelector("#next");
+let prevButton = document.querySelector("#prev");
+let noSoal = document.querySelector("#noconso");
+let atas = document.querySelector("#atas");
+let i=0;
+noSoal.innerHTML=i+1;
+window.onload = function awal(){
+	document.getElementById("containermodus").hidden=true;
+	consoMean5[1].style.display='none'
+};
+
+nextButton.addEventListener("click", function () {
+	if(i==1){
+		consoMean5[1].style.display='block';
+		consoMean5[0].style.display='none';
+		i--;
+	} else {
+		consoMean5[1].style.display='none';
+		consoMean5[0].style.display='block';
+		i++;
 	}
-
-	tampil();
-
-	$("#prev").click(function(){
-		if(i==0){
-			i=jlhsoal-1;
-			tampil();
-		}
-		else{
-			i--;
-			tampil();
-		}
-	})
-
-	$("#next").click(function(){
-		if(i==jlhsoal-1){
-			i=0;
-			tampil();
-		}
-		else{
-			i++;
-			tampil();
-		}
-	})
+	noSoal.innerHTML=i+1;
+	atas.scrollIntoView();
+})
+prevButton.addEventListener("click", function () {
+	if(i==1){
+		consoMean5[1].style.display='block';
+		consoMean5[0].style.display='none';
+		i--;
+	} else {
+		consoMean5[1].style.display='none';
+		consoMean5[0].style.display='block';
+		i++;
+	}
+	noSoal.innerHTML=i+1;
+	atas.scrollIntoView();
 })
 
 
@@ -59,3 +56,4 @@ function cobamean(){
 	document.getElementById("cobamodus").hidden=false;
 	document.getElementById("consomodus").hidden=true;
 }
+

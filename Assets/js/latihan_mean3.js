@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let jwbArray = [];
         let pembArray =[];
 
-        let randQuestion = soalSatu.soal_median.sort((a,b) => {return 0.5 - Math.random()})
+        let randQuestion = soalSatu.soal_mean.sort((a,b) => {return 0.5 - Math.random()})
         let sliceQuestion = randQuestion.slice(0, 5)
 
         tampilSoalSatu.innerHTML = sliceQuestion[0].soal;
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       }
     };
-    xhttp.open("GET", "../../json/latihan_median.json", true);
+    xhttp.open("GET", "../../json/latihan_mean3.json", true);
     xhttp.send();
   } 
 

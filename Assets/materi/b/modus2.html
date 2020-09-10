@@ -29,8 +29,9 @@
 	<body>
 		<div class="header">
 			<img src="../../gambar/logo.png" id="logo" style="float:left"/>
+			<a href="javascript:void(0);" class="iconmenu" onclick="sidebar()"><i class="fa fa-bars"></i></a>
 		</div>
-		<div class="sidebar">
+		<div class="sidebar" id="sidebar">
 		</div>
 		<div class="konten">
 			<div class="progressbar"></div>
@@ -169,8 +170,8 @@
 				next[index].addEventListener("click", function(e){
 				e.preventDefault();
 				localStorage.setItem('modus3','modus3');
-				if(localStorage.getItem("progress") <=10){
-		      		localStorage.setItem("progress",10)
+				if(localStorage.getItem("progress") <=16){
+		      		localStorage.setItem("progress",16)
 		      	}
 
 		      	location.href = 'modus3.html'

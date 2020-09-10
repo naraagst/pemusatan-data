@@ -3,30 +3,20 @@
 		<title>STATISTIKA</title>
 	
 		<link href="../../css/statistik.css" rel="stylesheet">	
-		<link href="../../css/materi2.css" rel="stylesheet">	
+		<link href="../../css/materi2.css" rel="stylesheet">
 		<link href="../../css/latihanfix.css" rel="stylesheet">	
-		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>	
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
         .tabcontent {
             display: none;
         }
-
         .tabcontent .active {
             display: block;
         }        
    		</style>
-   		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-		});
-		</script>
-		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 		<script>
-			window.onload = function awal(){
-				// document.getElementById("rumusmean").hidden = true;
-				document.getElementById("containermodus").hidden = true;
-			};
+			
 		</script>
 	</head>
 	<body>
@@ -39,61 +29,21 @@
 		<div class="konten">
 			<div class="progressbar"></div>
 			<div class="subkonten">
-			<div class="materi">
-				<h2>Mean (Rata-Rata)</h2>
-				<div class="rumus submateri" id="rumus">
-					<div class="petunjuk">
-						<a href=javascript:void(0) onclick="petunjuk()"><p id="petunjuka">Klik untuk menyembunyikan petunjuk</p>
-						<div id="petunjuk">
-							<ul>
-							<li>Susunlah poin-poin dibawah dengan cara <span class="laptop">men<i>drag</i></span><span class="hp">tap dan tahan kemudian pindahkan</span> setiap poin ke kotak yang tersedia hingga membentuk rumus umum rata-rata(mean) yang benar. </li>
-							<li>Klik tombol <b>Cek Jawaban</b> untuk memeriksa apakah jawaban sudah benar.</li>
-							<li>Jika seluruh poin telah tersusun dengan benar, maka contoh soal dan latihan <span class="laptop">disamping</span> <span class="hp">dibawah</span> dapat diakses</li>
-							</ul>
-						</div>
-						</a>
-					</div>
-					
-					<div style="border:3px solid rgb(0,156,255); padding:1%; margin:1%; border-radius: 5px;background-color: rgb(235, 239, 240, 0.5)" id="ddrumus">
-					<h4 style="font-size:22px;text-align: center;font-family: Poppins;color:rgb(0,84,130);border-bottom: 3px solid rgb(0,84,130)">Menyusun Rumus Mean</h4>
-					<div id="ddrumusmean">
-					<table>
-						<tr>
-					    	<td rowspan="2">
-						        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-								</div>
-					        </td>
-					        <td rowspan="2" style="width:1%;padding:10px">
-					        =
-					        </td>
-					        <td style="border-bottom:2px solid black;">
-					        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-					        </td>
-					    </tr>
-					    <tr>
-					    	<td>
-					        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-					        </td>
-					    </tr>
-					</table>
-					<div style="margin-left: 50%;text-align: center">
-						<div draggable="true" ondragstart="drag(event)" id="drag1" class="grab" height="50px">Rata - Rata (Mean)</div>
-						<div draggable="true" ondragstart="drag(event)" id="drag2" class="grab" height="50px">Jumlah Seluruh Data</div>
-						<div draggable="true" ondragstart="drag(event)" id="drag3" class="grab" height="50px">Banyak Data</div>
-						<span id="note"></span>
-					</div>
-					</div>
-					<p id="hasilddbenar">Jawabanmu benar. Silahkan pelajari contoh soal dan latihan <span class="laptop">di samping</span><span class="hp">di bawah</span>.<p>
-						<p id="hasilddsalah">Jawaban masih salah. Silahkan tekan tombol reset dan coba lagi.<p>
-					<center>
-					<button class="cek" onclick="cek()" id="cekdd">Cek Jawaban</button>
-					<button class="cek" onclick="reset1()" id="resetdd">Reset</button>
-					</center>
-					</div>
-					<p class="hp" style="color:red; font-size:12">*Jika drag and drop di atas tidak berfungsi, silahkan langsung pelajari contoh soal dan latihan di bawah</p>
+			<div class="materi mean4">
+				<h3>Rata-Rata Gabungan dari <br/>Dua Buah Data</h3>
+				<div class="submateri5">
+					<p>Misalkan terdapat dua kelompok data berikut.</p>
+					<p>
+						Kelompok data pertama terdiri atas $n_1$ nilai data yaitu $x_1,x_2,x_3,...,x_{n_1}$ dan memiliki rata-rata $\bar{x_1}$.<br/>
+						Kelompok data kedua terdiri atas $n_2$ nilai data yaitu $x_1,x_2,x_3,...,x_{n_2}$ dan memiliki rata-rata $\bar{x_2}$.<br/>
+					</p>
+					<p>Rata-rata gabungan kedua kelompok tersebut dapat dihitung menggunakan rumus berikut.</p>
+					<p><img src="../../gambar/xgab.jpg"  class="frame" style="width:60%;margin-left:15%"></p>
+					<p>dengan:<br/>$\bar{x}_{gab}$ = rata-rata gabungan<br/>$n_1$ = banyak data kelompok 1<br/>$\bar{x}_1$ = rata-rata nilai data kelompok 1<br/>$n_2$ = banyak data kelompok 2<br/>$\bar{x}_2$ = rata-rata nilai data kelompok 2</p>
+					<p><span class="hp"><b>Silahkan pelajari contoh soal dan jawab pertanyaan di bawah ini.</b></span></p>
 				</div>
 			</div>
-			<div class="conso" id="conso">
+			<div class="conso mean5" id="conso">
 				<div class="btn-group2 laptop">
 					<a onclick="consomean()" id="cmean1">Contoh Soal</a>
 					<a onclick="cobamean()" id="cmean2">Pertanyaan</a>
@@ -104,32 +54,39 @@
 				</div>
 				<div id="containermodus">
 					<div id="consomodus">
-						<p id="soalmodus"></p>
-						<div id="datamodus" class="soalmodus"></div>
-						<p id="soalmodus2"></p>
-						<div id="pembahasanmean">
-							
-						</div>              
-						<div class="consonav">
-							<a id="prev"><img src="../../gambar/prev.png"/></a>
-							<div class="consonav1"><span id="noconso"></span> dari <span id="jlhsoal"></span></div>
-							<a id="next"><img src="../../gambar/next.png"/></a>
+						<span id="atas"></span>
+						<div class="consoMean5">
+							<p><b>Soal :</b><br/>Rata-rata berat badan 13 siswa putra 55 kg, sedangkan rata-rata berat badan 7 siswa putri 48 kg. Hitunglah rata-rata berat badan seluruh siswa.</p>
+							<div>
+								<p><b>Pembahasan :</b></p><p>Misalkan:<br/>$\bar{x}_1$ = 55 &nbsp; dan $n_1$ = 13,<br/>$\bar{x}_2$ = 48 &nbsp; dan $n_2$ = 7<br/><br/>Rata-rata berat badan seluruh siswa :<br/><img src='../../gambar/consomean9.jpg' width='40%'><br/><br/><b>Jadi, rata-rata berat badan seluruh siswa adalah 52,55</b></p></p>
+							</div>              
 						</div>
+						<div class="consoMean5">
+							<p><b>Soal :</b><br/>Rata-rata nilai ulangan Matematika lima siswa adalah 62. Jika nilai seorang siswa tidak diikutkan, rata-rata nilai ulangan berubah menjadi 60. Hitunglah nilai ulangan siswa yang tidak diikutkan.</p>
+							<div>
+								<p><b>Pembahasan :</b></p><p>Misalkan : <br/>$\bar{x}_1$ = rata-rata nilai 4 siswa<br/>$x_2$ = nilai seorang siswa yang tidak diikutkan<br/> Maka $\bar{x}_1$ = 60, $n_1$ = 4, dan $n_2$ = 1.<br/><br/>Rata-rata nilai ulangan Matematika lima siswa adalah 62 maka :<br/><img src='../../gambar/consomean10.jpg' style='width:40%'><br/><b>Jadi, nilai ulangan siswa yang tidak diikutkan adalah 70</b>.</p>
+							</div>              
+						</div>
+							<div class="consonav">
+								<span id="prev"><img src="../../gambar/prev.png"/></span>
+								<div class="consonav1"><span id="noconso"></span> dari <span>2</span></div>
+								<span id="next"><img src="../../gambar/next.png"/></span>
+							</div>
 					</div>
 					<div id="cobamodus">
-							<div class="petunjuk">
-							<a href=javascript:void(0) onclick="petunjuk2()"><p id="petunjuka2"><b>Klik untuk menyembunyikan petunjuk</b></p>
-							<div id="petunjuk2">
-								<ul>
+						<div class="petunjuk">
+							<a href=javascript:void(0) onclick="petunjuk()"><p id="petunjuka"><b>Klik untuk menyembunyikan petunjuk</b></p>
+							<div id="petunjuk">
+							<ul>
 									<li>Hitunglah mean dari setiap soal berikut, kemudian isi jawabannya pada kolom input yang telah disediakan. </li> 
 									<li>Klik tombol "Cek Jawaban" untuk memeriksa apakah jawaban benar atau salah. Jika jawaban benar maka bar pada bagian atas soal akan berwarna <font style="color:green;font-weight: bold">Hijau</font>, jika salah maka bar akan berwarna <font style="color:red;font-weight: bold">Merah</font></li> 
 									<li>Klik tombol "Ulang" untuk menjawab ulang soal.</li>
 									<li>Klik tombol ">>" untuk beralih ke soal selanjutnya dan tombol "<<" untuk beralih ke soal sebelumnya.</li>
 									<li>Jika terdapat jawaban berupa bilangan desimal, bulatkan menjadi 2 angka dibelakang koma. Kemudian ganti tanda koma (,) menjadi titik (.), <b>contoh : 73.92</b></li>
-								</ul>
-							</div></a>
+								</ul></a>
 							</div>
-							<center>
+						</div>
+						<center>
 								<div class="progress">
 								    <div id="progress-bar1" class="progress-bar"></div>
 								    <div id="progress-bar2" class="progress-bar"></div>
@@ -271,35 +228,42 @@
 			</div>
 			<div class="halaman">
 				<div class="btn-group">
-					<a href="mean2.html"><< Sebelumnya</a>
+					<a href="mean3.html"><< Sebelumnya</a>
 					<a href="mean1.html">1</a>
 					<a href="mean2.html">2</a>
-					<a href="#"  class="active">3</a>
-					<a href="" class="lanjut">4</a>
-					<a href="" class="lanjut">Selanjutnya >></a>
+					<a href="mean3.html">3</a>
+					<a href="#"  class="active">4</a>
+					<!-- <a href="mean5.html">5</a> -->
+					<a href="median1.html">Selanjutnya >></a>
 				</div>
 			</div>
 		</div>
 
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
 		<script src="../../js/sidebar.js"></script>
 		<script src="../../js/unlock-pages.js"></script>
 		<script src="../../js/style.js"></script>
-		<script src="../../js/dragdrop.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="../../js/mean3.js"></script>
-		<script src="../../js/latihan_mean1.js"></script>
+		<script src="../../js/mean5.js"></script>
+		<script src="../../js/latihan_mean3.js"></script>
 		<script type="text/javascript">
 			const next = document.querySelectorAll('.lanjut');
 
 			next.forEach((item,index)=>{
 				next[index].addEventListener("click", function(e){
 				e.preventDefault();
-				localStorage.setItem('mean4','mean4');
-				if(localStorage.getItem("progress") <=8){
-		      		localStorage.setItem("progress",8)
+				localStorage.setItem('median1','median1');
+				if(localStorage.getItem("progress") <=10){
+		      		localStorage.setItem("progress",10)
 		      	}
 
-		      	location.href = 'mean4.html'
+		      	location.href = 'median1.html'
 				})
 			})
 			

@@ -24,6 +24,8 @@
 		</script>
 		<script>
 			window.onload = function awal(){
+				document.getElementById("cmean1").style="border:5px solid rgb(0,156,255, 0.5);border-bottom: none;background-color: white;";
+				document.getElementById("cmean1a").style="border:2px solid rgb(0,156,255, 0.5);border-bottom: none;background-color: white;";
 				document.getElementById("cobamodus").hidden=true;
 			};
 		</script>
@@ -31,8 +33,9 @@
 	<body>
 		<div class="header">
 			<img src="../../gambar/logo.png" id="logo" style="float:left"/>
+			<a href="javascript:void(0);" class="iconmenu" onclick="sidebar()"><i class="fa fa-bars"></i></a>
 		</div>
-		<div class="sidebar">
+		<div class="sidebar" id="sidebar">
 		</div>
 		<div class="konten">
 			<div class="progressbar"></div>
@@ -48,9 +51,13 @@
 				</center>
 			</div>
 			<div class="conso" id="conso" style="overflow: hidden;">
-				<div class="btn-group2">
-					<a onclick="consomodus()" id="cm1">Contoh Soal</a>
-					<a onclick="cobamodus()" id="cm2">Pertanyaan</a>
+				<div class="btn-group2 laptop">
+					<a onclick="consomean()" id="cmean1">Contoh Soal</a>
+					<a onclick="cobamean()" id="cmean2">Pertanyaan</a>
+				</div>
+				<div class="btn-group2 hp">
+					<a onclick="consomean()" id="cmean1a">Contoh Soal</a>
+					<a onclick="cobamean()" id="cmean2a">Pertanyaan</a>
 				</div>
 				<div id="containermodus">
 					<div id="consomodus">
@@ -96,6 +103,9 @@
 									<input type="text" id="jwbsiswa"/>
 									<span id="hasilbenar"></span>
 								</div>
+								<div id="lihat1" class="lihat">Klik <span>disini</span> untuk melihat pembahasan</div>
+								<div id="pemb1" class="pemb">
+								</div>
 								<center><span class="fontt benarSemua" style="color:green"></span></center>
 							<center>
 							<div class="menulat" style="margin-bottom: 10px;">
@@ -117,6 +127,9 @@
 									Jawab :
 									<input type="text" id="jwbsiswa2"/>
 									<span id="hasilbenar2" style="color:green"></span>
+								</div>
+								<div id="lihat2" class="lihat">Klik <span >disini</span> untuk melihat pembahasan</div>
+								<div id="pemb2" class="pemb">
 								</div>
 								<center><span class="fontt benarSemua" style="color:green"></span></center>
 							<center>
@@ -140,6 +153,9 @@
 									<input type="text" id="jwbsiswa3"/>
 									<span id="hasilbenar3" style="color:green"></span>
 								</div>
+								<div id="lihat3" class="lihat">Klik <span >disini</span> untuk melihat pembahasan</div>
+								<div id="pemb3" class="pemb">
+								</div>
 								<center><span class="fontt benarSemua" style="color:green"></span></center>
 							<center>
 							<div class="menulat" style="margin-bottom: 10px;">
@@ -162,6 +178,9 @@
 									<input type="text" id="jwbsiswa4"/>
 									<span id="hasilbenar4" style="color:green"></span>
 								</div>
+								<div id="lihat4" class="lihat">Klik <span >disini</span> untuk melihat pembahasan</div>
+								<div id="pemb4" class="pemb">
+								</div>
 								<center><span class="fontt benarSemua" style="color:green"></span></center>
 							<center>
 							<div class="menulat" style="margin-bottom: 10px;">
@@ -183,6 +202,9 @@
 									Jawab :
 									<input type="text" id="jwbsiswa5"/>
 									<span id="hasilbenar5" style="color:green"></span>
+								</div>
+								<div id="lihat5" class="lihat">Klik <span >disini</span> untuk melihat pembahasan</div>
+								<div id="pemb5" class="pemb">
 								</div>
 								<center><span class="fontt benarSemua" style="color:green"></span></center>
 							<center>
@@ -227,8 +249,8 @@
 				next[index].addEventListener("click", function(e){
 				e.preventDefault();
 				localStorage.setItem('kuisb','kuisb');
-				if(localStorage.getItem("progress") <=11){
-		      		localStorage.setItem("progress",11)
+				if(localStorage.getItem("progress") <=17){
+		      		localStorage.setItem("progress",17)
 		      	}
 
 		      	location.href = 'evaluasiB'
